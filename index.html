@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/jltbo/Downloads/deepseek_html_20250829_48acdf.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoHome Solutions - Reformas Integrales</title>
+    <link rel="stylesheet" href="./TecnoHome Solutions - Reformas Integrales_files/all.min.css">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header y navegación */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+            color: white;
+            padding: 25px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3498db;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 36px;
+        }
+        
+        .slogan {
+            font-size: 18px;
+            font-style: italic;
+            color: #ecf0f1;
+            text-align: right;
+        }
+        
+        /* Hero section */
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        /* Secciones de contenido */
+        .section {
+            padding: 50px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+        }
+        
+        .section-content {
+            font-size: 18px;
+            line-height: 1.8;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .service-card {
+            background: linear-gradient(145deg, #3498db, #2c3e50);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        /* Formulario de contacto */
+        .contact {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.95);
+            font-size: 16px;
+        }
+        
+        .full-width {
+            grid-column: span 2;
+        }
+        
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 18px 35px;
+            font-size: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a2530;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1000px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .slogan {
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .full-width {
+                grid-column: span 1;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    TecnoHome Solutions
+                </div>
+                <div class="slogan">"Estilo, comodidad y funcionalidad es nuestro legado"</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con imagen -->
+    <section class="hero">
+        <img src="./TecnoHome Solutions - Reformas Integrales_files/photo-1605146769289-440113cc3d00" alt="Vivienda moderna, tecnificada y bien iluminada" class="hero-image">
+        <div class="hero-content">
+            <h1>Transformamos tus espacios con tecnología y diseño</h1>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <div class="section-content">
+                <p>Somos una empresa dedicada a la reforma integral de viviendas, oficinas y locales comerciales. Dedicados, responsables y resolutivos. Nuestro equipo de profesionales cuenta con amplia experiencia en el sector y está comprometido con la excelencia en cada proyecto.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><i class="fas fa-tools"></i> Reformas</h3>
+                        <p>Transformamos espacios para hacerlos más funcionales y atractivos.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-bolt"></i> Electricidad</h3>
+                        <p>Instalaciones eléctricas seguras y eficientes con los más altos estándares.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-faucet"></i> Fontanería</h3>
+                        <p>Soluciones integrales para tus necesidades de agua y saneamiento.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-fan"></i> Climatización</h3>
+                        <p>Sistemas de calefacción y refrigeración para tu máximo confort.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-sun"></i> Sombreado</h3>
+                        <p>Soluciones inteligentes para controlar la luz y temperatura en tus espacios.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-robot"></i> Automatización</h3>
+                        <p>Convierte tu hogar en una smart home con sistemas automatizados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Visión -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Visión</h2>
+            <div class="section-content">
+                <p>Tomar una pequeña parte del pastel en el ámbito de la construcción y reformas, como un referente en cuanto a Diseño, Comodidad, Elegancia, Funcionalidad y Modernidad. Aspiramos a ser reconocidos por nuestra capacidad para integrar tecnología y confort en cada espacio que transformamos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Misión -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Misión</h2>
+            <div class="section-content">
+                <p>Entregar un producto que satisfaga los deseos y expectativas del cliente y en algunos casos que sobrepase esas expectativas. Nos comprometemos a utilizar materiales de calidad, aplicar soluciones innovadoras y cumplir con los plazos establecidos, garantizando siempre la satisfacción total de nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white; border-bottom-color: #3498db;">Contacto</h2>
+            <p style="margin-bottom: 30px; font-size: 18px;">¿Necesitas asesoramiento? Completa el formulario y nos comunicaremos contigo a la brevedad.</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" required="">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" required="">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required="">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" required="">
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message">Mensaje (opcional)</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                    <button type="button" onclick="sendToWhatsApp()" class="btn">
+                        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>TecnoHome Solutions © 2023 - Todos los derechos reservados</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+34 643 288891</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@technohomesolutions.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Madrid, España</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function sendToWhatsApp() {
+            // Obtener valores del formulario
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+            const message = document.getElementById('message').value;
+            
+            // Validar campos obligatorios
+            if (!name || !phone || !email || !address) {
+                alert('Por favor, complete todos los campos obligatorios.');
+                return;
+            }
+            
+            // Crear mensaje para WhatsApp
+            const whatsappMessage = `Hola, me interesan sus servicios.%0A%0A*Datos de contacto:*%0A*Nombre:* ${name}%0A*Teléfono:* ${phone}%0A*Email:* ${email}%0A*Dirección:* ${address}%0A*Mensaje:* ${message || 'Sin mensaje adicional'}`;
+            
+            // Número de WhatsApp (en formato internacional sin espacios ni caracteres especiales)
+            const whatsappNumber = '34643288891';
+            
+            // Crear enlace de WhatsApp
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+            
+            // Abrir enlace en una nueva pestaña
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+
+</body></html>
